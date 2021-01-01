@@ -1,0 +1,133 @@
+body {
+  margin: 0px;
+  font-family: 'Muli', sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.myHeader {
+  background-color: #00072d;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.myHeader__logo {
+  height: 70px;
+  margin-left: 24px;
+}
+
+.mainContent {
+  background-image: linear-gradient(#00072d, #0e6ba8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  color: white;
+}
+.mainContent__form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: rgba(255,255,255,0.1);
+  border: 2px solid white;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 40px;
+  width: 300px;
+  min-height: 490px;
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.mainContent__form--loginButton {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  letter-spacing: 1px;
+  margin: 10px 0px;
+}
+.mainContent__form--inputs {
+  display: flex;
+  flex-direction: column;
+}
+.mainContent__form--inputs > input {
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 0px;
+  margin-bottom: 20px;
+  height: 40px;
+  padding: 0px 20px;
+}
+.mainContent__form--recover {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.mainContent__form--recover > label {
+  display: flex;
+  align-items: center;
+}
+.mainContent__form--loginOptions {
+  display: flex;
+  flex-direction: column;
+}
+.mainContent__form--loginOptions > div {
+  margin-bottom: 10px;
+}
+.mainContent__form--googletwitter {
+  display: flex;
+  align-items: center;
+}
+.mainContent__form--googletwitter > img {
+  margin-right: 10px;
+}
+.mainContent__form--register {
+  margin-bottom: 20px;
+}
+
+.myFooter {
+  display: flex;
+  align-items: center;
+  background-color: #0e6ba8;
+  height: 100px;
+  font-size: 14px;
+}
+.myFooter > a {
+  margin-left: 30px;
+}
+
+::placeholder {
+  color: white;
+  font-family: 'Muli', sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+  .mainContent__form {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0px;
+  }
+
+  .myFooter {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .myFooter > a {
+    margin-left: 30px;
+    margin-bottom: 4px;
+  }
+}
