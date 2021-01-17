@@ -9,6 +9,7 @@ This repo contains a very simple frontend project that I made using html and css
 ### CSS
 - BEM (Block__Element--Modifier) architecture
 - Flexbox
+- CSS Grid
 - Media queries
 - Class selector
 - Id selector
